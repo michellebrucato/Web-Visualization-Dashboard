@@ -1,4 +1,3 @@
-<!-- boiler plate with bootstrap -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,53 +41,58 @@
                 <a class="dropdown-item" href="plots/lat_vs_cloudiness.png">Cloudiness</a>
                 <a class="dropdown-item" href="plots/lat_vs_humidity.png">Humidity</a>
                 <a class="dropdown-item" href="plots/lat_vs_temp.png">Temperature</a>
-                <a class="dropdown-item" href="plots/lat_vs_wind.png">Wind</a>
+                <a class="dropdown-item" href="plots/lat_vs_wind.png">Wind Speed</a>
                 </div>
             </li>
             </ul>
         </div>
-        </nav>
+    </nav>
 
-    <div class="container">
-        <div class="row">
-        <h1>Welcome To The Climate Dashboard!</h1>
+<!-- container for graphs -->
+    <div class = "container"> 
+        <div class="box box-single">
+            <section>
+                  <h1>Compare Graphical Findings</h1>
+                  <hr>
+                  <section>
+                          <p>Click any plot for an in-depth analysis.</p>
+                  </section>
+            </section>
+        </div>
+  
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            <h3> Cloudiness</h3>
+                <figure>
+                    <a href="cloudiness.html">
+                    <img src="plots/lat_vs_cloudiness.png" alt="Latitude vs. Cloudiness"></a>
+                </figure>
+        </div>
+                
+        <div class="col-xs-12 col-md-6">
+            <h3>Humidity</h3>
+                <figure>
+                    <a href="humidity.html">
+                    <img src="plots/lat_vs_humidity.png" alt="Latitude vs. Humidity"></a>
+                </figure>
+        </div>
+  
+        <div class="col-xs-12 col-md-6">
+            <h3>Temperature</h3>
+                <figure>
+                    <a href="temperature.html">
+                    <img src="plots/lat_vs_temp.png" alt="Latitude vs. Temperature"></a>
+                  </figure>
+        </div>
+  
+        <div class="col-xs-12 col-md-6">
+            <h3>Windiness</h3>
+                <figure>
+                    <a href="windspeed.html">
+                    <img src="plots/lat_vs_wind.png" alt="Latitude vs. Wind Speed"></a>
+                </figure>
         </div>
     </div>
-
-    <br>
-    <br>
-
-<!-- Container 1 -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-12">
-                <h2>Analyzing Latitude vs. Climate</h2>
-                <hr>
-                <p>
-                    This dashboard was created to see if there is a correlation between latitude and climate of a city, relative to its proximity to the equator.  The dataset contained over 500 globally diverse cities and was pulled using the OpenWeatherMap API.
-                </p>
-                <br>
-                <img src="plots/lat_vs_temp.png" alt="Temperature" height="400" width="550" align = "left">
-                <br>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <h2>Visualizations</h2>
-                <hr>
-                    <div class= "col-md-6 col-sm-12">
-                        <img src="plots/lat_vs_cloudiness.png" alt="Cloudiness" height="210" width="300"> 
-                    </div> 
-                    <div class= "col-md-6 col-sm-12">
-                        <img src="plots/lat_vs_humidity.png" alt="Humidity" height="210" width="300">
-                    </div> 
-                    <div class= "col-md-6 col-sm-12">
-                        <img src="plots/lat_vs_temp.png" alt="Temperature" height="210" width="300">
-                    </div> 
-                    <div class= "col-md-6 col-sm-12">
-                        <img src="plots/lat_vs_wind.png" alt="Windiness" height="210" width="300">
-                    </div> 
-            </div>
-        </div>
-    </div>    
-
+</div>
 </body>
-</html>
+

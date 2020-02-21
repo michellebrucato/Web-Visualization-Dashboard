@@ -1,7 +1,7 @@
-h1 {
-    color: rgb(42, 121, 141);
+h1, h3 {
+    color:#78C2AD;
 }
 
-h3 {
-    color: rgb(23, 75, 88);
+h1, h2, h4 {
+    color:#7888;
 }
