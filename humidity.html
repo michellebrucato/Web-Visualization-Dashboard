@@ -14,8 +14,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
-<!-- bootstrap nav bar -->
 <body>
+    <!-- bootstrap nav bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,3 +47,47 @@
             </ul>
         </div>
     </nav>
+
+     <!-- windspeed graph -->
+     <div class="container">
+        <div class="row row-grid">
+            <div class="col-md-8">
+                <div class="box box-left">
+                    <section id="intro">
+                        <h1> Latitude vs. Humidity</h1>
+                        <hr>
+                        <figure>
+                            <a target="#" href="plots/lat_vs_humidity.png">
+                                <img id="viz-main" src="plots/lat_vs_humidity.png" alt="humidity" height="400" width="550">
+                            </a>
+                        </figure>
+                        <hr>
+                        <p>
+                            Similar to the temperature graph, latitude and humidity do not prove to have a strong correlation.  As city latitudes increase on the graph, humidity looks to be more concetrated in the 60%+ range.  Alternatively, the humidity plot points increasingly scatter as you move left on the x-axis. 
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- visualization side bar  -->
+            <div class="col-md-4 col-sm-12">
+                <h2>Visualizations</h2>
+                <hr>
+                    <div class= "col-md-6 col-sm-12">
+                        <img src="plots/lat_vs_cloudiness.png" alt="Cloudiness" height="210" width="300"> 
+                    </div> 
+                    <div class= "col-md-6 col-sm-12">
+                        <img src="plots/lat_vs_humidity.png" alt="Humidity" height="210" width="300">
+                    </div> 
+                    <div class= "col-md-6 col-sm-12">
+                        <img src="plots/lat_vs_temp.png" alt="Temperature" height="210" width="300">
+                    </div> 
+                    <div class= "col-md-6 col-sm-12">
+                        <img src="plots/lat_vs_wind.png" alt="Windiness" height="210" width="300">
+                    </div> 
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
+
